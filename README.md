@@ -2,9 +2,9 @@
 
 ## Python based search engine which uses Page Rank.
 
-## Designed by Vipul Sharma and Laverne Schrock
+### Designed by Vipul Sharma and Laverne Schrock
 
-## Check the Wiki page to install and run this project 
+### Check the Wiki page to install and run this project 
 
 ## Description
 
