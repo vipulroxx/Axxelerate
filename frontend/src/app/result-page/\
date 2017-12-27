@@ -1,0 +1,35 @@
+.result-title {
+    text-decoration-line: none;
+}
+
+.a:link {
+    color: #1a0dab;
+}
+
+.result-link {
+    color: green;
+}
+
+#result-list-wrapper {
+  min-width: 150px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.query-form {
+  min-width: 150px;
+  width: 100%;
+  text-align: center;
+  padding-top: 0.5cm;
+}
+
+.full-width {
+  min-width: 150px;
+  max-width: 600px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.next-button {
+ padding-left: 30%;
+}

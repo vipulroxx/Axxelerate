@@ -1,0 +1,39 @@
+<div *ngIf="badQuery">
+    <app-not-found></app-not-found>
+</div>
+<div *ngIf="!badQuery">
+    <mat-toolbar>
+        <div class="query-form">
+            <mat-form-field class="full-width">
+                <input matInput [(ngModel)]="query" (keyup.enter)="submitQuery(query)">
+            </mat-form-field>
+            <button mat-raised-button color="primary" (click)="submitQuery(query)">Search</button>
+        </div>
+    </mat-toolbar>
+    <div id="result-list-wrapper">
+        <mat-list id="result-list">
+            <mat-list-item *ngIf="results.length === 0">
+                No results. Modify your query and try again.
+            </mat-list-item>
+            <mat-list-item *ngFor='let result of results'>
+                <a class="result-title" href="{{result.link}}" matLine>{{result.title}}</a>
+                <a class="result-link" href="{{result.link}}" matLine>{{result.link}}</a><br>
+                <mat-chip-list matLine><mat-chip color="primary" selected="true" *ngFor='let word of result.chipwords'>{{word}}</mat-chip></mat-chip-list>
+            </mat-list-item>
+        </mat-list>
+        
+        <span class="previous-button" *ngIf="hasPrev">
+            <a  mat-raised-button color="primary" routerLink="/search" [queryParams]="{q : query, f : prevFrom}">Previous</a>
+        </span>
+        <span class="previous-button" *ngIf="!hasPrev">
+            <button mat-raised-button disabled>Previous</button>
+        </span>
+        <span class="next-button" *ngIf="hasNext">
+            <a mat-raised-button color="primary" routerLink="/search" [queryParams]="{q : query, f : nextFrom}">Next</a>
+        </span>
+        <span class="next-button" *ngIf="!hasNext">
+            <button mat-raised-button disabled>Next</button>
+        </span>
+
+    </div>
+</div>

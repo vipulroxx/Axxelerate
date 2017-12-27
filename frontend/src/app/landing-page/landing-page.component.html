@@ -1,0 +1,10 @@
+<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+<div id="logo">
+    Axxelerate
+</div><br>
+<div class="query-form">
+    <mat-form-field class="full-width">
+        <input matInput [(ngModel)]="query" (keyup.enter)="submitQuery(query)" placeholder="Search for...">
+    </mat-form-field><br />
+    <button mat-raised-button color="primary" (click)="submitQuery(query)">Search</button>
+</div>

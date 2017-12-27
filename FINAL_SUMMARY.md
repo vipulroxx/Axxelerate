@@ -1,12 +1,6 @@
-# Axxelerate
+# Final Summary
 
-## Python based search engine which uses Page Rank.
-
-## Designed by Vipul Sharma and Laverne Schrock
-
-## Check the Wiki page to install and run this project 
-
-## Description
+## Project description and goals
 
 The goal of this project was to create a simple search engine for pages on the
 web. 
@@ -34,7 +28,7 @@ A sketch of what is in our database:
 
 
 **This diagram is for the axxelerate2 database. There is also a database called
-axxelerate, but that did not have our final design, and is not the one that works
+axxerlate, but that did not have our final design, and is not the one that works
 with our final code.**
 
 ## State of project
@@ -88,4 +82,3 @@ not limited to:
 - Add a _lot_ of documentation. We've not clearly documented how to run the web
   client, how to run the crawler, how to generate the pagerank, nor how to fetch
   the chipwords.
-
